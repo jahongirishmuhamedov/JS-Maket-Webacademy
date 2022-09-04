@@ -29,8 +29,26 @@ img {
     width: 870px;
 }
 
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .sidebar {
     width: 270px;
+}
+
+.card-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    margin-bottom: 30px;
+}
+
+.card-link:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
 }
 
 .card {
