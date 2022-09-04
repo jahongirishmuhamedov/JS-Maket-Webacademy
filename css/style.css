@@ -158,6 +158,10 @@ img {
     margin-right: 10px;
 }
 
+.widget + .widget {
+    margin-top: 30px;
+}
+
 .widget__title {
     position: relative;
     font-weight: 700;
@@ -229,4 +233,62 @@ img {
 .location__checkbox:checked + .location__btn:hover {
     background-color: #daab06;
 }
+
+.radio {
+    display: block;
+    cursor: pointer;
+}
+
+.radio + .radio {
+    margin-top: 15px;
+}
+
+.radio__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000000;
+}
+
+.radio__real {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.radio__fake {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: bottom;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color:  #fff;
+    border: 1px solid #777777;
+}
+
+.radio__real:checked + .radio__fake {
+    background-color:  #FFE074;
+}
+
+.radio__real:checked ~ .radio__title{
+    font-weight: 400;
+}
+
+.radio__real:checked + .radio__fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #3C3C3C;
+    transform: translate(-50%, -50%);
+}
+
+
 
