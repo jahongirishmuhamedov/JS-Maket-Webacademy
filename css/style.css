@@ -14,10 +14,9 @@ img {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 15px;
 }
 
 .row {
@@ -29,6 +28,10 @@ img {
     width: 870px;
 }
 
+.main + .sidebar {
+    margin-left: 30px;
+}
+
 .card-wrapper {
     display: flex;
     justify-content: space-between;
@@ -36,6 +39,7 @@ img {
 }
 
 .sidebar {
+    min-width: 200px;
     width: 270px;
 }
 
@@ -463,4 +467,10 @@ img {
     background-color: #ffe173;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        max-width: 830px;
+    }
+
+}
 
