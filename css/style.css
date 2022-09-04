@@ -157,3 +157,76 @@ img {
     vertical-align: bottom;
     margin-right: 10px;
 }
+
+.widget__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.widget__title::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/shape.svg") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.location__row {
+    display: flex;
+}
+
+.location__row:first-child {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    border: 1px solid #d6d6d6;
+}
+
+.location__row:last-child {
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #d6d6d6;
+    border-top: none;
+}
+
+.location__btn {
+    font-family: inherit;
+    flex-grow: 1;
+    height: 50px;
+    padding: 0 15px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    color: #3C3C3C;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.location__btn:hover {
+    background-color: #fff0bb;
+}
+
+.location__checkbox {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.location__checkbox:checked + .location__btn {
+    background-color: #FFCF26;
+}
+
+.location__checkbox:checked + .location__btn:hover {
+    background-color: #daab06;
+}
+
