@@ -316,6 +316,10 @@ img {
     cursor: pointer;
 }
 
+.checkbox--hidden {
+    display: none;
+}
+
 .checkbox + .checkbox {
     margin-top: 15px;
 }
@@ -370,7 +374,7 @@ img {
     display: none;
 }
 
-.widget__show-hidden {
+.widget__show--hidden {
     display: inline-block;
     border: none;
     background: transparent;
@@ -384,7 +388,7 @@ img {
     transition: color 0.2s ease;
 }
 
-.widget__show-hidden:hover {
+.widget__show--hidden:hover {
     color: #0e68a5;
     text-decoration: underline;
 }
