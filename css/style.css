@@ -166,6 +166,10 @@ img {
     margin-top: 30px;
 }
 
+.card-link--hidden {
+    display: none !important;
+}
+
 .widget__title {
     position: relative;
     font-weight: 700;
@@ -173,6 +177,7 @@ img {
     line-height: 1.16;
     color: #000000;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .widget__title::after {
@@ -183,6 +188,18 @@ img {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.widget__title--active::after {
+    transform: rotate(180deg);
+}
+
+.widget__body {
+
+}
+
+.widget__body--hidden {
+    display: none;
 }
 
 .location__row {
